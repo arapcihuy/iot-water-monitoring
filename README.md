@@ -1,54 +1,48 @@
-# 💧 IoT Water Quality Monitoring System
+# 🌡️ IoT Water Monitoring — DHT11 Realtime Dashboard
 
-Sistem monitoring kualitas air berbasis IoT secara real-time. Dirancang untuk memantau parameter vital air menggunakan sensor analog/digital dan mengirimkan data ke dashboard analisis melalui protokol MQTT/HTTP.
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter)](https://flutter.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase)](https://firebase.google.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
-
-## ✨ Fitur Utama
-
-- **📊 Real-time Monitoring:** Pantau parameter air (pH, TDS, Turbidity, Suhu) setiap detik.
-- **📱 Dashboard Web/Mobile:** Visualisasi data yang interaktif dan mudah dibaca.
-- **⚠️ Intelligent Alerts:** Notifikasi otomatis jika kualitas air terdeteksi di bawah standar.
-- **💾 Data Logging:** Penyimpanan riwayat data untuk analisis tren jangka panjang.
+Aplikasi Flutter untuk monitoring suhu & kelembaban real-time dari sensor DHT11 via Firebase Firestore. Data ditampilkan dalam bentuk angka langsung dan grafik interaktif menggunakan Chart.
 
 ---
 
-## 🛠️ Hardware & Tech Stack
+## ✨ Features
 
-- **Hardware:** ESP32 / Arduino, Sensor pH, Sensor TDS, Sensor Turbidity.
-- **Connectivity:** WiFi, MQTT Protocol.
-- **Cloud/Backend:** Node-RED / Firebase / ThingsBoard (pilih salah satu).
-- **Security:** CodeQL Analysis, SECURITY.md policy active.
+- 🌡️ **Realtime Monitoring** — Suhu & kelembaban DHT11 dari Firebase Firestore
+- 📊 **Interactive Charts** — Grafik suhu & kelembaban via `fl_chart`
+- 🔥 **Firebase Crashlytics** — Error tracking otomatis
+- 📱 **Cross-Platform** — Android, iOS, Web dalam satu codebase
+- 🔄 **Live Update** — Data Firestore ter-streaming secara real-time
 
----
+## 🛠️ Tech Stack
 
-## 🚀 Setup & Instalasi
+| Component | Tech |
+|-----------|------|
+| Framework | Flutter 3.x |
+| Backend | Firebase (Firestore, Crashlytics) |
+| Charts | fl_chart |
+| Language | Dart |
 
-### 1) Hardware Wiring
-Hubungkan sensor ke pin analog ESP32 sesuai skema di folder `docs/`.
+## 🚀 Getting Started
 
-### 2) Konfigurasi Firmware
-Edit `config.h` (jika tersedia) atau variabel berikut di main file:
-```cpp
-const char* ssid = "WIFI_SSID";
-const char* password = "WIFI_PASSWORD";
-const char* mqtt_server = "broker.hivemq.com";
+```bash
+git clone https://github.com/arapcihuy/iot-water-monitoring.git
+cd iot-water-monitoring
+flutter pub get
+flutter run
 ```
 
-### 3) Upload & Run
-- Flash kode menggunakan **VS Code + PlatformIO** atau **Arduino IDE**.
-- Monitor serial output pada baud rate 115200.
+### Prerequisites
 
----
+- Flutter SDK ≥ 3.0
+- Firebase project (configure `firebase_options.dart`)
 
-## 🤝 Kontribusi
+## 📄 License
 
-Pull Request sangat dihargai. Untuk perubahan besar, harap buka issue terlebih dahulu.
+MIT
 
-## 📄 Lisensi
+## 👤 Author
 
-Proyek ini dilisensikan di bawah **MIT License**. Lihat file [LICENSE](LICENSE) untuk detail.
-
-## 🛡️ Keamanan
-
-Kami menjaga keamanan proyek ini dengan serius. Lihat [SECURITY.md](SECURITY.md) untuk melaporkan kerentanan.
+**arapcihuy** — [github.com/arapcihuy](https://github.com/arapcihuy)
