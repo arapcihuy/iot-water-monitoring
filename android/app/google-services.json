@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "637839451003",
+    "firebase_url": "https://iot-water-monitoring-bd477-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "iot-water-monitoring-bd477",
+    "storage_bucket": "iot-water-monitoring-bd477.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637839451003:android:53bc72fdf4fe7d2fb8d3de",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbHG1eiOY4-KE9JGgNrJq2bxz3cszcuKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637839451003:android:48fd90cb771d0986b8d3de",
+        "android_client_info": {
+          "package_name": "com.ras"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbHG1eiOY4-KE9JGgNrJq2bxz3cszcuKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637839451003:android:ad469abe62c3594db8d3de",
+        "android_client_info": {
+          "package_name": "com.rasyid.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbHG1eiOY4-KE9JGgNrJq2bxz3cszcuKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
